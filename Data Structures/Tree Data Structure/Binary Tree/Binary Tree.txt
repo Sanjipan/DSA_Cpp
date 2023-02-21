@@ -56,3 +56,25 @@ Binary Search Tree Data structure algorithm :
            b> TreeNode* deleteNode(TreeNode*r, int v)
     }
 
+//////////////////////////////////////////////////////////////////////////////////////////////
+void insertNode(new_node)
+{
+    1. IF root = NULL THEN -> root = new_node
+    2. ELSE
+        2.1 SET temp = root
+        2.2 WHILE temp!=NULL
+            2.2.1 IF new_node.value == temp.value
+                2.2.1.1 Then -> return      // no duplicates allowed
+            2.2.2 ELSE IF (new_node.value < temp.value) && (temp.left == NULL)
+                2.2.2.1 THEN -> temp.left = new_node    //value inserted on left
+                2.2.2.2 BREAK
+            2.2.3 ELSE IF (new_node.value <temp.value)
+                2.2.3.1 THEN -> temp = temp.left
+            2.2.4 ELSE IF(new_node.value > temp.value) && (temp.right == NULL)
+                2.2.4.1 THEN -> temp.right = new_node   // value inserted on right
+                2.2.4.2 BREAK
+            2.2.5 ELSE
+                2.2.5.2 temp = temp.right
+                END WHILE
+            END IF 
+}
