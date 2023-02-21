@@ -70,7 +70,12 @@ insertion{
             continue
             }
     4.access node N after which you want to append new node new_N
-        a.if node to be inserted at the end then 
+        if (node to be inserted at the end){
             new_node->next = head
             Previous_node->next = new_node
+        }
+        else (node to be inserted in between){
+            new_node->next = Previous_node->next
+            Previous_node->next = new_node
+        }
 }
