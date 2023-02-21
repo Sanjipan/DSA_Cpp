@@ -1,0 +1,76 @@
+Operation for Circular Linked List--
+>>Creating node-
+class Node{
+    public:
+        int key;
+        int data;
+        Node* next;
+
+        Node()
+        {
+            key = 0;
+            data = 0;
+            next = NULL; 
+        }
+
+        Node(int k, int d)
+        {
+            key = k;
+            data = d;
+            next = NULL;
+        }
+};
+>>Append node algorithm/pseudo code--
+1. Get the new node.
+2. Check if node exists with same key
+    if(true){
+            abort
+        }
+        else{
+            continue
+            }
+3. if head == NULL{
+        append operation will start
+    }
+    else{
+        traverse to the end of the list  (using pointer concept)
+    }
+4. append new node at the end
+
+>>Prepend node algorithm/pseudo code--
+1. Get the new node.
+2.Check if the node exists with same key
+        if(true){
+            abort
+        }
+        else{
+            continue
+            }
+3.Assign head value to a tamporary pointer - ptr
+4.Use ptr to traverse to end of the list
+5.Use ptr to access next pointer to this newly passed node
+6.point next pointer of n to head ptr
+7.change head ptr to n
+
+>>Insert node after alogorithm--
+insertion{
+    1.Get the new node & the key of the node in the list after which you want to link this node.
+    2.Check if the node exists with same key as new node.
+        if(true){
+            abort
+        }
+        else{
+            continue
+            }
+    3.Check if node exists with the key entered by user
+        if(true){
+            abort
+        }
+        else{
+            continue
+            }
+    4.access node N after which you want to append new node new_N
+        a.if node to be inserted at the end then 
+            new_node->next = head
+            Previous_node->next = new_node
+}
