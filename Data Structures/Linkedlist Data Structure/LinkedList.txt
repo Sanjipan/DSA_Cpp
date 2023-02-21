@@ -50,7 +50,7 @@ Operation for Circular Linked List--
 
 >>Append node algorithm/pseudo code--
 1. Get the new node.
-2. Check if node existes with same key
+2. Check if node exists with same key
     a. if true, abort
     b. if false continue
 3a. if head == NULL then append at start
@@ -69,14 +69,25 @@ Operation for Circular Linked List--
 7.change head ptr to n
 
 >>Insert node after alogorithm--
-1.Get the new node & the key of the node in the list after which you want to link this node.
-2.Check if the node exists with same key as new node.
-        a.if true, abort
-        b.if false, continue
-3.Check if node exists with the key entered by user
-        a.if false, abort
-        b.if true, continue
-4.access node N after which you want to append new node new_N
+insertion{
+    1.Get the new node & the key of the node in the list after which you want to link this node.
+    2.Check if the node exists with same key as new node.
+        if(true){
+            abort
+        }
+        else{
+            continue
+            }
+    3.Check if node exists with the key entered by user
+        if(true){
+            abort
+        }
+        else{
+            continue
+            }
+    4.access node N after which you want to append new node new_N
         a.if node to be inserted at the end then 
             new_node->next = head
             Previous_node->next = new_node
+}
+
