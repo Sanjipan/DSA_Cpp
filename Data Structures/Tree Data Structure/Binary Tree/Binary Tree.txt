@@ -1,0 +1,58 @@
+                                                Binary Tree
+
+Binary Tree : A binary tree is a tree data structure in which each node has at most two children. Which are refferd to as the left child (LD) and the right child (RC).
+
+Important Binary Tree Terms & Properties :
+
+1> A binary tree is known as Strick/Proper Binary Tree, where each node has 2 or 0 children.
+2> A binary tree is knwo as COMPETE binary tree if all levels except the last are comletely filled and all nodes are as left as possible.
+3> A binary tree is called PERFECT binary tree of all levels are completely filled with 2 childrens each.
+4> Max number of nodes at level 'x' = 2^x
+5> For a binary tree, maximum no. of nodes with height 'h' = 2^0 + 2^1 + ....... + 2^h
+                                                           = 2^(h+1)-1
+6> A binary tree is called BALANCED binary tree, if the difference between the height of left and right subtree for every node is not more than k (usually 1)
+
+For node at indes i :
+left child index : 2i+1
+right child index : 2i+1
+
+Binary Search Tree Data Structure :
+
+Binary search tree : Binary search tree data structure, in which the values in the left subtree of every node are smaller and the values in the right subtree of every node are large.
+
+
+
+Binary Search Tree Data structure algorithm :
+
+1. Binary SEARCH  tree as dynamic node in memory
+    Node(*left,data,*right)
+
+    class TreeNode
+    {
+        1. int values
+        2. TreeNode *left
+        3. TreeNode *right 
+
+        4. TreeNode()
+        5. TreeNode(int v)
+    }
+
+    class BST
+    {
+        1.TreeNode *root
+
+        2. bool isTreeEmpty()
+        3. void insertNode(TreeNode *new_node)
+        // depth first traversal approch
+        4. a> void printPreorder(TreeNode* r)
+           b> void printInorder(TreeNode* r)
+           c> void printPostorder(TreeNode* r)
+           d> void print2D(TreeNode *r, int space)
+           
+           // breadth first triversal approch
+           e> void printLevelOrder(TreeNode* r)
+        5. TreeNode* serch(TreeNode* r,int v)
+        6. a> TreeNode* minValueNode(TreeNode* node)
+           b> TreeNode* deleteNode(TreeNode*r, int v)
+    }
+

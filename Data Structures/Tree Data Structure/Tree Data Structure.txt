@@ -1,0 +1,46 @@
+                            Tree Data Structure
+
+whats is data structure :
+Data structure is way of storing/organizing data in the memory, in such a way that access, management & modification becomes efficient.
+
+Which Data structure to use :
+1> what data neet to be stored 
+2> cost of opperation (read,write,update etc)
+3> memory usage & efficiency
+4> ease of implementation
+5> maintainablity
+
+
+Linear data structure :
+
+array
+stack
+queue
+linekd list
+
+Non Linear data structure :
+Tree
+graphs
+
+
+Tree Data structure :
+
+Tree : A tree is a non linear data structure that simulates a hirearchical tree structure with a root of values & subtrees of childeren with parent node represented as a set of linked nodes.
+
+Terms :
+
+1. Root : Root is a special node in a tree . The entire tree is referenced through it. It does not have a parent.
+2. Parent node : Parent node is an immidiate predecessor of a node.
+3. Child Node : All immidiate sucessor of a node are its child.
+5. Leaf Node : Last node in the tree. There is no node after this node.
+6. Edge : Edge is a connection between one node to another . It is a line between two nodes or a node and a leaf.
+7. Path : Path is a number of successive edge from source node to destination node.
+8. Degree of Node : Degree of a node is equal to number of childeren a node have.
+
+Important Tree terms :
+
+1> Tree can be termed as a RECURSIVE data structure.
+2> In a valid tree for N nodes we have N-1 edges/links.
+3> Depth of node : the no. of edges from the tree root node to the node.
+4> Height of node : the no. of edges on the longest path between that node and a leaf.
+5> Height of a node : Height of a tree is the Height of its root node.
